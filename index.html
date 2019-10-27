@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="https://www.nicepng.com/png/detail/367-3672718_diwali-diya-free-clipart-diya.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <title>Happy Diwali</title>
+        <meta property="og:title" content="Wishing you and your family a happy and prosperous Diwali" />
+        <meta property="og:description" content="Happy Diwali" />
+        <meta property="og:image" itemprop="image" content="https://www.shayranadil.com/wp-content/uploads/2016/10/diwali-2018.jpg" />
+    </head>
+
+    <body>
+        <style>
+            /* @media (min-width: 320px) and (max-width: 480px) {
+                .circle {
+					width: 800px;
+                	height: 800px;
+				}
+            } */
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f36d2b;
+            }
+
+            .circle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+                background: #aa4412;
+                background: #ff8d00;
+				border: 5px solid #fff;
+                box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+            }
+
+			.circle::before {
+                content: '';
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                border: 8px dotted #fff;
+                box-sizing: border-box;
+                border-radius: 50%;
+                /* transform: scale(1.05); */
+                animation: rotate 20s linear infinite;
+            }
+
+            .greeting {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Kaushan Script', cursive;
+                color: #fff;
+                text-transform: capitalize;
+                text-align: center;
+                text-shadow: 0 15px 15px rgba(0,0,0,0.5);
+
+            }
+
+            .greeting > div:first-child {
+                font-size: 50px;
+            }
+
+            .greeting > div:last-child {
+                font-size: 100px;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: scale(1.1) rotate(0deg);
+                }
+
+                100% {
+                    transform: scale(1.1) rotate(360deg);
+                }
+            }
+
+            .light {
+                position: absolute;
+                bottom: 50;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 240px;
+                height: 120px;
+                background-color: #562710;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 120px;
+                border-bottom-right-radius: 120px;
+                box-shadow: 0 0 25px rgba(0,0,0,1);
+            }
+
+            .light::after{
+                content: '';
+                position: absolute;
+                width: 240px;
+                height: 120px;
+                border: 4px dotted #eae18b;
+                box-sizing: border-box;
+                /* border-radius: 50%; */
+                border-bottom-left-radius: 110px;
+                border-bottom-right-radius: 110px;
+                transform: scale(0.95);
+            }
+
+            .light:before {
+                content: '';
+                position: absolute;
+                top: -80px;
+                left: calc(50% - 40px);
+                width: 40px;
+                height: 80px;
+                background-color: #ff0;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                transform-origin: bottom right;
+                filter: blur(1px);
+                animation: animate 5s linear infinite;
+            }
+
+            @keyframes animate {
+                0% {
+                    transform: rotate(30deg);
+                    box-shadow: 0 0 30px #ff0;
+                }
+
+                25% {
+                    transform: rotate(20deg)
+                }
+
+                50% {
+                    transform: rotate(15deg);
+                    box-shadow: 0 0 100px #ff0;
+
+                }
+
+                75% {
+                    transform: rotate(20deg)
+                }
+
+                100% {
+                    transform: rotate(30deg);
+                    box-shadow: 0 0 30px #ff0;
+
+                }
+            }
+
+			.credits {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				color: #fff;
+                font-family: sans-serif;
+			}
+
+			.credits > div {
+				margin: 5px;
+			}
+
+            .credits >div:first-child {
+				font-size: 18px;
+            }
+            .credits >div:last-child {
+				font-size: 10px;
+                text-align: center;
+            }
+        </style>
+        <div class="circle">
+            <div class="greeting">
+                <div>Happy</div>
+                <div>Diwali</div>
+            </div>
+            <div class="light"></div>
+		</div>
+		<div class="credits">
+			<div>Made by Prateek Priyesh using CSS</div>
+			<div>Inspired from YouTube</div>
+		</div>
+
+    </body>
+</html>
